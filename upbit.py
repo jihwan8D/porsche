@@ -47,7 +47,7 @@ for coin in coins :
 df = pd.DataFrame({"이름" : cleanNameCoins, "현재가" : closePrice, "하락률" : riseFallRate})
 df = df.astype({"하락률" : "float"})
 
-df = df[(df["이름"]== "BTC") | (df["하락률"] < -3)]
+df = df[(df["이름"]== "BTC") | (df["하락률"] < -5)]
 
 if len(df) > 1 :
     from_addr = formataddr(('Ming', 'aeneascon@google.com'))
