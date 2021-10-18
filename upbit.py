@@ -83,7 +83,8 @@ if len(df) > 1 :
         # 메일 발송
         session.sendmail(from_addr, "aeneascon@naver.com", message.as_string())            
         session.sendmail(from_addr, "jihwan8d@gmail.com", message.as_string())    
-        session.sendmail(from_addr, "seodh4@gmail.com", message.as_string())    
+        session.sendmail(from_addr, "seodh4@gmail.com", message.as_string())
+        session.sendmail(from_addr, "bey9443@gmail.com", message.as_string())
     
         print( 'Successfully sent the mail!!!' )
     except Exception as e:
